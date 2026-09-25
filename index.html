@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Fort - Study Abroad & Scholarship Playbook</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter & Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#090d16',
+                        },
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#312e81',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 0;
+        }
+        body {
+            background-color: #f1f5f9;
+            font-family: 'Inter', sans-serif;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 18mm 18mm 16mm 18mm;
+            margin: 20px auto;
+            background: #ffffff;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            box-sizing: border-box;
+            position: relative;
+            display: flex;
+            flex-col;
+            justify-content: space-between;
+        }
+        @media print {
+            body {
+                background: white;
+            }
+            .page {
+                margin: 0;
+                box-shadow: none;
+                page-break-after: always;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+        .num-badge {
+            background: #312e81;
+            color: #ffffff;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            width: 24px;
+            height: 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased py-6">
+
+    <div class="no-print fixed top-4 right-4 z-50 flex items-center gap-3 bg-white/90 backdrop-blur border border-slate-300 shadow-xl p-2.5 rounded-2xl">
+        <button onclick="window.print()" class="px-4 py-2 bg-brand-700 hover:bg-brand-800 text-white font-semibold text-xs rounded-xl shadow-md transition flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+            Print / Save as PDF
+        </button>
+    </div>
+
+    <!-- ================= PAGE 1 ================= -->
+    <div class="page rounded-lg flex flex-col justify-between">
+        <div>
+            <!-- Document Header -->
+            <header class="border-b-2 border-slate-900 pb-4 mb-5 flex justify-between items-start">
+                <div>
+                    <span class="text-[11px] font-black uppercase tracking-widest text-brand-700 block mb-0.5">EDUCATION FORT CONSULTANTS</span>
+                    <h1 class="font-heading text-3xl font-extrabold text-slate-900 tracking-tight leading-none">
+                        Study Abroad &<br>Scholarship Playbook
+                    </h1>
+                    <p class="text-xs font-semibold text-slate-600 mt-1.5">
+                        Your step-by-step roadmap to international education and funding
+                    </p>
+                </div>
+                <div class="text-right flex flex-col items-end">
+                    <span class="px-3 py-1 bg-brand-900 text-white text-[10px] font-extrabold uppercase tracking-wider rounded-md shadow-sm">
+                        OFFICIAL STUDENT GUIDE
+                    </span>
+                </div>
+            </header>
+
+            <!-- Intro Box -->
+            <div class="bg-indigo-50/70 border-l-4 border-brand-800 p-3.5 rounded-r-lg mb-6">
+                <p class="text-[11.5px] leading-relaxed text-slate-700">
+                    <strong>Congratulations on taking the first step!</strong> This comprehensive guide outlines target destinations, intake deadlines, average scholarship amounts, and English language requirements for international study. Keep this document handy during your upcoming 1-on-1 counseling session with our expert advisory team.
+                </p>
+            </div>
+
+            <!-- Section 1: Popular Study Destinations Overview -->
+            <section class="mb-6">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="num-badge">1</span>
+                    <h2 class="font-heading text-base font-bold text-slate-900">Popular Study Destinations Overview</h2>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3.5">
+                    <!-- United Kingdom -->
+                    <div class="border border-slate-200 rounded-xl p-3.5 bg-white shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-heading font-extrabold text-sm text-slate-900">United Kingdom</h3>
+                                <span class="px-2 py-0.5 bg-amber-100 text-amber-800 text-[9px] font-extrabold uppercase rounded-full">Popular</span>
+                            </div>
+                            <p class="text-[10.5px] font-semibold text-slate-500 mb-2">Intakes: September & January</p>
+                            <ul class="text-[10.5px] space-y-1 text-slate-700">
+                                <li class="flex items-start gap-1"><span class="text-brand-800">•</span> <strong>Degree Duration:</strong> 1 Yr Master's / 3 Yr Bachelor's</li>
+                                <li class="flex items-start gap-1"><span class="text-brand-800">•</span> <strong>Post-Study Work:</strong> 2 Years Graduate Route</li>
+                                <li class="flex items-start gap-1"><span class="text-brand-800">•</span> <strong>Top Focus:</strong> Business, Tech, Law, Healthcare</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- United States -->
+                    <div class="border border-slate-200 rounded-xl p-3.5 bg-white shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-heading font-extrabold text-sm text-slate-900">United States</h3>
+                                <span class="px-2 py-0.5 bg-blue-100 text-blue-800 text-[9px] font-extrabold uppercase rounded-full">STEM Focus</span>
+                            </div>
+                            <p class="text-[10.5px] font-semibold text-slate-500 mb-2">Intakes: Fall (Aug/Sep) & Spring (Jan)</p>
+                            <ul class="text-[10.5px] space-y-1 text-slate-700">
+                                <li class="flex items-start gap-1"><span class="text-brand-800">•</span> <strong>Degree Duration:</strong> 2 Yr Master's / 4 Yr Bachelor's</li>
+                                <li class="flex items-start gap-1"><span class="text-brand-800">•</span> <strong>Post-Study Work:</strong> Up to 3 Years (OPT for STEM)</li>
+                                <li class="flex items-start gap-1"><span class="text-brand-800">•</span> <strong>Top Focus:</strong> CS, Data Analytics, Engineering</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Australia -->
+                    <div class="border border-slate-200 rounded-xl p-3.5 bg-white shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-heading font-extrabold text-sm text-slate-900">Australia</h3>
+                                <span class="px-2 py-0.5 bg-emerald-100 text-emerald-800 text-[9px] font-extrabold uppercase rounded-full">High PR Path</span>
+                            </div>
+                            <p class="text-[10.5px] font-semibold text-slate-500 mb-2">Intakes: Feb / March & July / Aug</p>
+                            <ul class="text-[10.5px] space-y-1 text-slate-700">
+                                <li class="flex items-start gap-1"><span class="text-brand-800">•</span> <strong>Degree Duration:</strong> 1.5-2 Yr Master's / 3 Yr UG</li>
+                                <li class="flex items-start gap-1"><span class="text-brand-800">•</span> <strong>Post-Study Work:</strong> 2 to 4 Years Subclass 485</li>
+                                <li class="flex items-start gap-1"><span class="text-brand-800">•</span> <strong>Top Focus:</strong> Nursing, IT, Accounting, Construction</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Europe & UAE -->
+                    <div class="border border-slate-200 rounded-xl p-3.5 bg-white shadow-sm flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-heading font-extrabold text-sm text-slate-900">Europe & UAE</h3>
+                                <span class="px-2 py-0.5 bg-purple-100 text-purple-800 text-[9px] font-extrabold uppercase rounded-full">Affordable</span>
+                            </div>
+                            <p class="text-[10.5px] font-semibold text-slate-500 mb-2">Intakes: Sep/Oct (Europe) & Jan/Sep (Dubai)</p>
+                            <ul class="text-[10.5px] space-y-1 text-slate-700">
+                                <li class="flex items-start gap-1"><span class="text-brand-800">•</span> <strong>Degree Duration:</strong> 1-2 Yr Master's</li>
+                                <li class="flex items-start gap-1"><span class="text-brand-800">•</span> <strong>Key Perks:</strong> Schengen Visa access / Fast-track processing</li>
+                                <li class="flex items-start gap-1"><span class="text-brand-800">•</span> <strong>Top Focus:</strong> Int'l Business, AI, Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Language & Admission Benchmarks -->
+            <section class="mb-4">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="num-badge">2</span>
+                    <h2 class="font-heading text-base font-bold text-slate-900">Language & Admission Benchmarks</h2>
+                </div>
+
+                <div class="overflow-hidden border border-slate-200 rounded-xl shadow-sm">
+                    <table class="w-full text-left text-[11px] border-collapse">
+                        <thead>
+                            <tr class="bg-brand-950 text-white font-heading font-bold uppercase text-[9.5px] tracking-wider">
+                                <th class="p-2.5 border-b border-slate-800">Degree Level</th>
+                                <th class="p-2.5 border-b border-slate-800">Min Academic Requirement</th>
+                                <th class="p-2.5 border-b border-slate-800">IELTS Requirement</th>
+                                <th class="p-2.5 border-b border-slate-800">Alternative Tests</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 bg-white font-medium text-slate-700">
+                            <tr>
+                                <td class="p-2.5 font-bold text-slate-900 bg-slate-50/50">Undergraduate</td>
+                                <td class="p-2.5">High School (60%-75%+)</td>
+                                <td class="p-2.5 font-semibold text-slate-900">6.0 Overall <span class="text-[10px] font-normal text-slate-500">(Min 5.5 each)</span></td>
+                                <td class="p-2.5">PTE 54+ / Duolingo 105+</td>
+                            </tr>
+                            <tr class="bg-indigo-50/20">
+                                <td class="p-2.5 font-bold text-slate-900 bg-slate-50/50">Postgraduate (Master's)</td>
+                                <td class="p-2.5">Bachelor's Degree (2.5-3.0+ CGPA)</td>
+                                <td class="p-2.5 font-semibold text-slate-900">6.5 Overall <span class="text-[10px] font-normal text-slate-500">(Min 6.0 each)</span></td>
+                                <td class="p-2.5">PTE 62+ / Duolingo 115+</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2.5 font-bold text-slate-900 bg-slate-50/50">Top Tier / STEM Master's</td>
+                                <td class="p-2.5">Bachelor's Degree (3.2+ CGPA)</td>
+                                <td class="p-2.5 font-semibold text-slate-900">7.0 Overall <span class="text-[10px] font-normal text-slate-500">(Min 6.5 each)</span></td>
+                                <td class="p-2.5">GRE / GMAT <span class="text-[10px] text-slate-500">(Select Univs)</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+        <!-- Page 1 Footer -->
+        <footer class="border-t border-slate-200 pt-3 mt-4 flex justify-between items-center text-[10px] text-slate-400 font-medium">
+            <span>Education Fort - 2026 Study Abroad Guide</span>
+            <span>Page 1 of 2</span>
+        </footer>
+    </div>
+
+    <!-- ================= PAGE 2 ================= -->
+    <div class="page rounded-lg flex flex-col justify-between">
+        <div>
+            <!-- Section 3: Key Scholarship Opportunities -->
+            <section class="mb-6">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="num-badge">3</span>
+                    <h2 class="font-heading text-base font-bold text-slate-900">Key Scholarship Opportunities</h2>
+                </div>
+
+                <div class="overflow-hidden border border-slate-200 rounded-xl shadow-sm">
+                    <table class="w-full text-left text-[11px] border-collapse">
+                        <thead>
+                            <tr class="bg-brand-950 text-white font-heading font-bold uppercase text-[9.5px] tracking-wider">
+                                <th class="p-2.5 border-b border-slate-800">Scholarship Type</th>
+                                <th class="p-2.5 border-b border-slate-800">Target Country</th>
+                                <th class="p-2.5 border-b border-slate-800">Value / Coverage</th>
+                                <th class="p-2.5 border-b border-slate-800">Eligibility Baseline</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 bg-white font-medium text-slate-700">
+                            <tr>
+                                <td class="p-2.5 font-bold text-slate-900 bg-slate-50/50">Global Merit Discount</td>
+                                <td class="p-2.5">UK / Australia / USA</td>
+                                <td class="p-2.5 font-semibold text-brand-700">£2,000 - $10,000 Tuition Waiver</td>
+                                <td class="p-2.5">CGPA &gt; 3.0 or 75% Marks</td>
+                            </tr>
+                            <tr class="bg-indigo-50/20">
+                                <td class="p-2.5 font-bold text-slate-900 bg-slate-50/50">Vice-Chancellor Excellence</td>
+                                <td class="p-2.5">UK & Australia</td>
+                                <td class="p-2.5 font-semibold text-brand-700">Up to 50% Tuition Fee Off</td>
+                                <td class="p-2.5">High Academic Record & SOP</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2.5 font-bold text-slate-900 bg-slate-50/50">STEM Leadership Grant</td>
+                                <td class="p-2.5">USA & Canada</td>
+                                <td class="p-2.5 font-semibold text-brand-700">$5,000 - $15,000 per year</td>
+                                <td class="p-2.5">Enrolled in qualifying STEM course</td>
+                            </tr>
+                            <tr class="bg-indigo-50/20">
+                                <td class="p-2.5 font-bold text-slate-900 bg-slate-50/50">Regional Bursaries</td>
+                                <td class="p-2.5">Europe & UAE</td>
+                                <td class="p-2.5 font-semibold text-brand-700">15% - 30% Fee Concession</td>
+                                <td class="p-2.5">Early Application Submission</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Section 4: Application & Admission Timeline -->
+            <section class="mb-6">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="num-badge">4</span>
+                    <h2 class="font-heading text-base font-bold text-slate-900">Application & Admission Timeline</h2>
+                </div>
+
+                <div class="space-y-2.5">
+                    <!-- Phase 1 -->
+                    <div class="border border-slate-200 rounded-xl p-3 bg-white shadow-sm flex items-start gap-3">
+                        <div class="px-2 py-1 bg-brand-900 text-white font-heading font-extrabold text-[10px] rounded shrink-0 uppercase tracking-wider mt-0.5">
+                            Phase 1
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-[12px] text-slate-900">Initial Profile Assessment & Test Prep <span class="text-slate-400 font-medium">(Months 1-2)</span></h3>
+                            <p class="text-[11px] text-slate-600 mt-0.5">Finalize course choices, appear for IELTS/PTE exams, and gather academic transcripts & recommendation letters.</p>
+                        </div>
+                    </div>
+
+                    <!-- Phase 2 -->
+                    <div class="border border-slate-200 rounded-xl p-3 bg-white shadow-sm flex items-start gap-3">
+                        <div class="px-2 py-1 bg-brand-900 text-white font-heading font-extrabold text-[10px] rounded shrink-0 uppercase tracking-wider mt-0.5">
+                            Phase 2
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-[12px] text-slate-900">University Application & SOP Drafting <span class="text-slate-400 font-medium">(Months 3-4)</span></h3>
+                            <p class="text-[11px] text-slate-600 mt-0.5">Draft Statement of Purpose (SOP), submit applications to 3-5 target universities, and apply for early scholarships.</p>
+                        </div>
+                    </div>
+
+                    <!-- Phase 3 -->
+                    <div class="border border-slate-200 rounded-xl p-3 bg-white shadow-sm flex items-start gap-3">
+                        <div class="px-2 py-1 bg-brand-900 text-white font-heading font-extrabold text-[10px] rounded shrink-0 uppercase tracking-wider mt-0.5">
+                            Phase 3
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-[12px] text-slate-900">Offer Acceptance & Financial Documentation <span class="text-slate-400 font-medium">(Months 5-6)</span></h3>
+                            <p class="text-[11px] text-slate-600 mt-0.5">Receive conditional/unconditional offer letters, deposit tuition fees, and prepare bank statements for visa filing.</p>
+                        </div>
+                    </div>
+
+                    <!-- Phase 4 -->
+                    <div class="border border-slate-200 rounded-xl p-3 bg-white shadow-sm flex items-start gap-3">
+                        <div class="px-2 py-1 bg-brand-900 text-white font-heading font-extrabold text-[10px] rounded shrink-0 uppercase tracking-wider mt-0.5">
+                            Phase 4
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-[12px] text-slate-900">Visa Processing & Pre-Departure <span class="text-slate-400 font-medium">(Months 7-8)</span></h3>
+                            <p class="text-[11px] text-slate-600 mt-0.5">File student visa application, complete medical checkups, book accommodation, and attend pre-departure briefing.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5: Your Consultation Checklist -->
+            <section class="mb-4">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="num-badge">5</span>
+                    <h2 class="font-heading text-base font-bold text-slate-900">Your Consultation Checklist</h2>
+                </div>
+
+                <div class="border border-slate-200 rounded-xl p-3.5 bg-white shadow-sm">
+                    <p class="text-[11px] font-medium text-slate-500 mb-2.5">Have these items ready or noted down for your call with our Education Fort counselor:</p>
+
+                    <div class="space-y-2 text-[11px] font-medium text-slate-700">
+                        <label class="flex items-start gap-2.5 cursor-pointer">
+                            <input type="checkbox" class="w-3.5 h-3.5 rounded border-slate-300 text-brand-700 focus:ring-brand-600 mt-0.5">
+                            <span>Digital copies of High School / University Transcripts & Certificates</span>
+                        </label>
+                        <label class="flex items-start gap-2.5 cursor-pointer">
+                            <input type="checkbox" class="w-3.5 h-3.5 rounded border-slate-300 text-brand-700 focus:ring-brand-600 mt-0.5">
+                            <span>Target budget range for tuition & living expenses</span>
+                        </label>
+                        <label class="flex items-start gap-2.5 cursor-pointer">
+                            <input type="checkbox" class="w-3.5 h-3.5 rounded border-slate-300 text-brand-700 focus:ring-brand-600 mt-0.5">
+                            <span>Preferred study country, city, and degree specializations</span>
+                        </label>
+                        <label class="flex items-start gap-2.5 cursor-pointer">
+                            <input type="checkbox" class="w-3.5 h-3.5 rounded border-slate-300 text-brand-700 focus:ring-brand-600 mt-0.5">
+                            <span>Current status of English Proficiency Test (IELTS/PTE/Duolingo / None yet)</span>
+                        </label>
+                        <label class="flex items-start gap-2.5 cursor-pointer">
+                            <input type="checkbox" class="w-3.5 h-3.5 rounded border-slate-300 text-brand-700 focus:ring-brand-600 mt-0.5">
+                            <span>Valid Passport (or application status)</span>
+                        </label>
+                    </div>
+
+                    <!-- Callout Box -->
+                    <div class="mt-4 p-3 bg-brand-50 border border-brand-100 rounded-lg">
+                        <h4 class="font-heading font-extrabold text-[11.5px] text-brand-900">What Happens Next?</h4>
+                        <p class="text-[10.5px] text-brand-800 leading-snug mt-0.5">
+                            An Education Fort Senior Educational Counselor is reviewing your submitted profile. Expect an email or phone contact shortly to schedule your personalized 1-on-1 guidance session!
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Page 2 Footer -->
+        <footer class="border-t border-slate-200 pt-3 mt-4 flex justify-between items-center text-[10px] text-slate-400 font-medium">
+            <span>Education Fort - Contact: <a href="mailto:info@educationfort.com" class="text-brand-700 underline">info@educationfort.com</a></span>
+            <span>Page 2 of 2</span>
+        </footer>
+    </div>
+
+</body>
+</html>
